@@ -1,6 +1,6 @@
-import * as fs from "fs";
+import { readFileSync } from "fs";
 
-const data = fs.readFileSync("./Day 1/input.txt", "utf8");
+const data = readFileSync("./day-one/input.txt", "utf8");
 const entries = data.split("\n").map((e) => parseInt(e));
 
 let increases = 0;
